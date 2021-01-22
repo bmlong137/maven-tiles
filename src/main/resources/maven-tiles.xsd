@@ -2177,12 +2177,12 @@
           <xs:sequence>
             <xs:any minOccurs="0" maxOccurs="unbounded" processContents="skip"/>
           </xs:sequence>
+          <xs:attribute name="tiles-keep-id" type="xs:boolean" use="optional">
+            <xs:annotation>
+              <xs:documentation source="version">Tiles 2.0+</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
         </xs:complexType>
-        <xs:attribute name="tiles-keep-id" type="xs:boolean" use="optional">
-          <xs:annotation>
-            <xs:documentation source="version">Tiles 2.0+</xs:documentation>
-          </xs:annotation>
-        </xs:attribute>
       </xs:element>
     </xs:all>
   </xs:complexType>
@@ -2258,12 +2258,12 @@
           <xs:sequence>
             <xs:any minOccurs="0" maxOccurs="unbounded" processContents="skip"/>
           </xs:sequence>
+          <xs:attribute name="tiles-keep-id" type="xs:boolean" use="optional">
+            <xs:annotation>
+              <xs:documentation source="version">Tiles 2.0+</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
         </xs:complexType>
-        <xs:attribute name="tiles-keep-id" type="xs:boolean" use="optional">
-          <xs:annotation>
-            <xs:documentation source="version">Tiles 2.0+</xs:documentation>
-          </xs:annotation>
-        </xs:attribute>
       </xs:element>
     </xs:all>
   </xs:complexType>
@@ -2579,10 +2579,10 @@
       <xs:documentation source="version">1.0.0+</xs:documentation>
       <xs:documentation source="description">This element describes all of the tiles this project depends on</xs:documentation>
     </xs:annotation>
-    <xs:complexType>
+    <xs:all>
       <xs:sequence>
         <xs:element name="tile" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
       </xs:sequence>
-    </xs:complexType>
+    </xs:all>
   </xs:complexType>
 </xs:schema>
