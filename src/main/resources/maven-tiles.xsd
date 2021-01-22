@@ -2580,9 +2580,11 @@
       <xs:documentation source="description">This element describes all of the tiles this project depends on</xs:documentation>
     </xs:annotation>
     <xs:all>
-      <xs:sequence>
-        <xs:element name="tile" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
-      </xs:sequence>
+      <xs:element name="tile" minOccurs="0" maxOccurs="unbounded" type="xs:string">
+        <xs:annotation>
+          <xs:documentation source="version">Tiles 2.0+</xs:documentation>
+        </xs:annotation>
+      </xs:element>
     </xs:all>
   </xs:complexType>
 </xs:schema>
