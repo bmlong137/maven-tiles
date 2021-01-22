@@ -2178,6 +2178,11 @@
             <xs:any minOccurs="0" maxOccurs="unbounded" processContents="skip"/>
           </xs:sequence>
         </xs:complexType>
+        <xs:attribute name="tiles-keep-id" type="xs:boolean" use="optional">
+          <xs:annotation>
+            <xs:documentation source="version">Tiles 2.0+</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
       </xs:element>
     </xs:all>
   </xs:complexType>
@@ -2254,6 +2259,11 @@
             <xs:any minOccurs="0" maxOccurs="unbounded" processContents="skip"/>
           </xs:sequence>
         </xs:complexType>
+        <xs:attribute name="tiles-keep-id" type="xs:boolean" use="optional">
+          <xs:annotation>
+            <xs:documentation source="version">Tiles 2.0+</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
       </xs:element>
     </xs:all>
   </xs:complexType>
